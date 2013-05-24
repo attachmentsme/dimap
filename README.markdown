@@ -1,17 +1,17 @@
 DIMAP
------
+===============
 
 Provides an HTTP REST interface to attachments in your Gmail account.
 
 Why I Built It?
-===============
+---------------
 
 DIMAP is a proof of concept of something I'd like to build at Attachments.me.
 
 I built this during a hack day at work, this is by now means production ready!
 
 Usage
-=====
+-----
 
 ```bash
 npm install dimap -g
