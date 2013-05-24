@@ -3,12 +3,12 @@ DIMAP
 
 Provides an HTTP REST interface to attachments in your Gmail account.
 
-Why I Built It?
+Word of Warning
 ---------------
 
-DIMAP is a proof of concept of something I'd like to build at Attachments.me.
+DIMAP is a proof of concept, I wanted to get a feel for how fast attachments could be proxied over HTTP.
 
-I built this during a hack day at work, this is by now means production ready!
+I built this during one hack day at work, this is by now means production ready!
 
 Usage
 -----
