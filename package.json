@@ -1,0 +1,36 @@
+{
+  "name": "dimap",
+  "version": "0.0.1",
+  "directories": {
+    "lib": "./lib",
+    "bin": "./bin",
+    "test": "./test"
+  },
+  "bin": "./bin/dimap.js",
+  "main": "./lib/index.js",
+  "author": "Ben Coe <bencoe@gmail.com>",
+  "engines": [
+    "node"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "description": "Provides an HTTP REST interface to attachments in your Gmail account.",
+  "keywords": [
+    "imap",
+    "http"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/attachmentsme/dimap.git"
+  },
+  "dependencies": {
+    "mocha": ">=1.7.4",
+    "underscore": ">=1.4.3",
+    "sinon": ">=1.7.2",
+    "mailparser": ">=0.3.6",
+    "imap": ">=0.7.11",
+    "node-promise": ">=0.5.4",
+    "optimist": "0.3.4"
+  }
+}
