@@ -21,7 +21,7 @@ dimap -u bencoe@gmail.com -p password
 Once you've installed DIMAP:
 
 * Find an message in your __All Mail__ folder with Attachments.
-* Inside a web-browser navigate to 127.0.0.1:8000/_MSGID_/_FILENAME_.
+* Inside a web-browser navigate to 127.0.0.1:8000/MSGID/FILENAME.
   * Here's a URL that works for my account: http://127.0.0.1:8000/13ecdddc67300f2a/bencoe.jpg
 
 Have fun.
