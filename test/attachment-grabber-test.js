@@ -22,7 +22,8 @@ describe('AttachmentGrabber', function() {
 
     it('should call #openBox with folder that contains all mail', function(done) {
       var attachmentGrabber = new AttachmentGrabber({
-        autoConnect: false
+        autoConnect: false,
+        imap: {}
       });
 
       attachmentGrabber.imap.getBoxes = sinon.mock().callsArgWith(0, null, this.xlist).once();
