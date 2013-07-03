@@ -27,21 +27,26 @@ var argv = optimist
     alias: 'help',
     describe: 'show help.'
   })
+  .options('x', {
+    alias: 'xoauth',
+    describe: 'authenticate using an xoauth string'
+  })
   .usage("dimap -u exmaple@gmail.com -p mypass -o 5000 -h 0.0.0.0")
   .argv;
 
 var user = argv.gmail_user || process.env.GMAIL_USER,
   password = argv.gmail_password || process.env.GMAIL_PASSWORD;
 
-if (argv.help || !(user && password) ) {
+if (argv.help || ! ( (user && password) || argv.xoauth) ) {
   console.log(optimist.help());
 } else {
   new Proxy({
     host: argv.host,
     port: argv.port,
-    attachmentGrabber: new AttachmentGrabber({
+    attachmentGrabberSettings: {
       user: user,
-      password: password
-    })
+      password: password,
+      xoauth: argv.xoauth
+    }
   }).start();
 }
